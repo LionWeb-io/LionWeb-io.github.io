@@ -16,7 +16,7 @@ components.
 ## Documentation
 Please find an overview at https://lionweb-io.github.io/specification/
 
-We also gave a talk at MPS Meetup 2023 ([slides](https://github.com/LionWeb-io/.github/raw/main/profile/LIonWeb%20at%20MPS%20Meetup%202023.pdf), [video](https://www.youtube.com/watch?v=dzZdjqbRzuU&list=PLQ176FUIyIUZ6e7lGYfyzYlnNkZiB2n9v&index=13))
+We also gave talks at MPS Meetup 2023 ([slides](https://github.com/LionWeb-io/.github/raw/main/profile/LIonWeb%20at%20MPS%20Meetup%202023.pdf), [video](https://www.youtube.com/watch?v=dzZdjqbRzuU&list=PLQ176FUIyIUZ6e7lGYfyzYlnNkZiB2n9v&index=13)) and LangDev 2023 ([slides](https://github.com/LionWeb-io/specification/blob/main/resources/LionWeb-LangDev2023.pdf), [video](https://www.youtube.com/watch?v=ZuR2C7DZ_r0))
 
 ## Activities
 
