@@ -14,9 +14,15 @@ improvements can be defined on top of the existing libraries and
 components.
 
 ## Documentation
-Please find an overview at https://lionweb-io.github.io/specification/
+Please find a [documentation overview](https://lionweb-io.github.io/specification/) on our website.
 
-We also gave talks at MPS Meetup 2023 ([slides](https://github.com/LionWeb-io/.github/raw/main/profile/LIonWeb%20at%20MPS%20Meetup%202023.pdf), [video](https://www.youtube.com/watch?v=dzZdjqbRzuU&list=PLQ176FUIyIUZ6e7lGYfyzYlnNkZiB2n9v&index=13)) and LangDev 2023 ([slides](https://github.com/LionWeb-io/specification/blob/main/resources/LionWeb-LangDev2023.pdf), [video](https://www.youtube.com/watch?v=ZuR2C7DZ_r0))
+We also gave talks:
+* [MPS Meetup 2023](https://youtrack.jetbrains.com/articles/MPS-A-216170508/JetBrains-MPS-Community-Meetup-2023-Videos-and-Slides) ([slides](https://github.com/LionWeb-io/.github/raw/main/profile/LIonWeb%20at%20MPS%20Meetup%202023.pdf), [video](https://www.youtube.com/watch?v=dzZdjqbRzuU&list=PLQ176FUIyIUZ6e7lGYfyzYlnNkZiB2n9v&index=13))
+* [LangDev 2023](https://langdevcon.org/Langdev2023.html#the-lionweb-initiative-by-niko-stotz-and-jos-warmer---slides) ([slides](https://github.com/LionWeb-io/specification/blob/main/resources/LionWeb-LangDev2023.pdf), [video](https://www.youtube.com/watch?v=ZuR2C7DZ_r0))
+* [Strumenta Community Panel Session](https://strumenta.community/meetup/strumenta-community-panel-session/)
+* [SEN Symposium 2024](https://www.sen-symposium.nl/) 
+* [MODELS 2024](https://conf.researchr.org/details/models-2024/models-2024-industry-day/6/LionWeb-Language-Interfaces-on-the-Web)
+* [LangDev 2024](https://langdevcon.org/2024/program#32) ([slides](https://github.com/LionWeb-io/specification/blob/main/resources/LangDev%202024%20Talk.pdf), [video](https://youtu.be/2KW-xalM2yE))
 
 ## Activities
 
