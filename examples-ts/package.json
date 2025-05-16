@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/uuid": "^10.0.0",
     "esbuild": "^0.25.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
@@ -19,6 +20,7 @@
     "@lionweb/core": "^0.6.12",
     "@lionweb/utilities": "^0.6.12",
     "@lionweb/validation": "^0.6.13-beta.6",
-    "@types/node": "^22.15.18"
+    "@types/node": "^22.15.18",
+    "uuid": "^11.1.0"
   }
 }

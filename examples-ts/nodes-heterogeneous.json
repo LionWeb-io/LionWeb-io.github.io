@@ -1,0 +1,80 @@
+{
+  "serializationFormatVersion": "2023.1",
+  "languages": [
+    {
+      "key": "Task Language",
+      "version": "1.0"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "51a0b122-9460-48de-9563-87920ae6e4fa",
+      "classifier": {
+        "language": "Task Language",
+        "version": "1.0",
+        "key": "TaskList"
+      },
+      "properties": [],
+      "containments": [
+        {
+          "containment": {
+            "language": "Task Language",
+            "version": "1.0",
+            "key": "tasks"
+          },
+          "children": [
+            "cf1ed13f-cd3e-4a2f-a368-cfe671ea9cf0",
+            "6330dbc9-75cb-4ce5-b232-38e82c97d6a5"
+          ]
+        }
+      ],
+      "references": [],
+      "annotations": [],
+      "parent": null
+    },
+    {
+      "id": "cf1ed13f-cd3e-4a2f-a368-cfe671ea9cf0",
+      "classifier": {
+        "language": "Task Language",
+        "version": "1.0",
+        "key": "Task"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "Task Language",
+            "version": "1.0",
+            "key": "name"
+          },
+          "value": "My Task #1"
+        }
+      ],
+      "containments": [],
+      "references": [],
+      "annotations": [],
+      "parent": "51a0b122-9460-48de-9563-87920ae6e4fa"
+    },
+    {
+      "id": "6330dbc9-75cb-4ce5-b232-38e82c97d6a5",
+      "classifier": {
+        "language": "Task Language",
+        "version": "1.0",
+        "key": "Task"
+      },
+      "properties": [
+        {
+          "property": {
+            "language": "Task Language",
+            "version": "1.0",
+            "key": "name"
+          },
+          "value": "My Task #2"
+        }
+      ],
+      "containments": [],
+      "references": [],
+      "annotations": [],
+      "parent": "51a0b122-9460-48de-9563-87920ae6e4fa"
+    }
+  ]
+}
