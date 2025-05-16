@@ -35,7 +35,7 @@ docker run --shm-size=1g -d --name lionwebrepodb -p 5432:5432 -e POSTGRES_PASSWO
 
 Configuration details (user, DB name, port) are defined in the `.env` file. `pgAdmin 4` is commonly used to inspect the database manually.
 
-![Database Schema](docs/database-schema.svg)
+![Database Schema](/img/database-schema.svg)
 
 ### Run the server
 
