@@ -73,7 +73,7 @@ const config = {
     prism: {
       theme: themes.github,
       darkTheme: themes.dracula,
-      additionalLanguages: ['python', 'java'],
+      additionalLanguages: ['python', 'java', 'typescript', 'kotlin'],
     },
     trailingSlash: true,
   },
