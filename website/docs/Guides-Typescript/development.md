@@ -1,5 +1,6 @@
 ---
 sidebar_position: 10
+title: Development
 ---
 
 Development relies on the following tools being installed:

@@ -57,10 +57,15 @@ const config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          label: 'Java references',
+          href: 'https://lionweb.io/lionweb-java/api/index.html',
           position: 'left',
-          label: 'These docs',
+          target: '_blank',
+        },
+        {
+          href: 'https://github.com/lionweb-io',
+          label: 'LionWeb on GitHub',
+          position: 'right',
         },
       ],
     },
@@ -73,10 +78,14 @@ const config = {
     prism: {
       theme: themes.github,
       darkTheme: themes.dracula,
-      additionalLanguages: ['python', 'java', 'typescript', 'kotlin'],
+      additionalLanguages: ['python', 'java', 'typescript', 'kotlin', 'csharp'],
     },
     trailingSlash: true,
   },
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 };
 
 module.exports = config; 

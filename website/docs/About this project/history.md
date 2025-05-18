@@ -18,4 +18,7 @@ These tools are independent and do not provide out-of-the-box interoperability. 
 * Many aren't broken down into components that are exposed through a well-defined API and can be used independently
 * Some provide similar functionality with different interfaces for the same kind of problem (M3 layer, model loading, e.g.)
 
-The lack of interoperability discourages others from developing additional components. It is also hard to explain to potential users, customers, contributors, and funders why this small community hasn't been able to coordinate better. We have started LionWeb to fix these problem: **The LionWeb initiative aims to facilitate the community-based development of language engineering and modeling tools on the web.**
+The lack of interoperability discourages others from developing additional components. It is also hard to explain to potential users, customers, contributors, and funders why this small community hasn't been able to coordinate better. We have started LionWeb to fix these problem: 
+
+:::info
+**The LionWeb initiative aims to facilitate the community-based development of language engineering and modeling tools on the web.**

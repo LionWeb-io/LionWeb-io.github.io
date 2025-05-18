@@ -43,13 +43,5 @@ The following example demonstrates how to use the LionWeb Java client to:
 4. Add children to that partition
 5. Store and retrieve nodes
 
+:::warning
 **CODE TO BE WRITTEN AFTER RELEASING THE CLIENT**
-
-And this is how the result would look like in the [LionWeb Repo Admin UI](https://github.com/LionWeb-io/lionweb-repo-admin-ui):
-
-![](/img/repo-admin-ui.png)
-
-### Creating partitions
-
-Something to keep in mind is that the LionWeb Repository will only let us create partitions without children. 
-So, we may need to create a partition and only then add children to it by invoking **store**.

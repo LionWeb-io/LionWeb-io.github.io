@@ -5,20 +5,21 @@ title: Participating in LionWeb
 
 ## Participation
 
-Currently, LionWeb consists of ten developers, all with a long history in language engineering and modeling tools (listed in alphabetical order)
+Currently, the LionWeb team sees the active participation of seven developers, all with a long history in language engineering and modeling tools (listed in alphabetical order)
 
 * [Meinte Boersma](https://www.dslconsultancy.com), Freelancer, The Netherlands
-* Norman Koester, [itemis](http://itemis.de), Germany
-* [Sergej Koscejev](https://specificlanguages.com), Freelancer, Czech Republic
 * Sascha Lisson, [itemis](http://itemis.de), Germany
-* Eugen Schindler [Canon Production Printing](https://cpp.canon/), The Netherlands
-* Alex Shatalin, [Jetbrains (MPS Team)](https://www.jetbrains.com), Czech Republic
+* Pedro Molina, [Metadev](https://metadev.pro/), Spain
 * Niko Stotz, [F1RE](https://www.f1re.io), The Netherlands
 * Federico Tomassetti, [Strumenta](https://strumenta.com), Italy
 * [Markus Voelter](http://voelter.de), Freelancer, Germany
 * Jos Warmer, [openmodeling](https://openmodeling.nl), The Netherlands
 
-During the first half of 2023, we slowly grew the set of participants based on invitation of existing participants.
+Participants who actively contributed in the past are:
+* Norman Koester, [itemis](http://itemis.de), Germany
+* [Sergej Koscejev](https://specificlanguages.com), Freelancer, Czech Republic
+* Eugen Schindler [Canon Production Printing](https://cpp.canon/), The Netherlands
+* Alex Shatalin, [Jetbrains (MPS Team)](https://www.jetbrains.com), Czech Republic
 
 [Join us on Slack](https://join.slack.com/t/lionweb/shared_invite/zt-1zltq8eqv-QJmtsZA8_oscCrO8HOp3FA) for interesting discussions.
 
