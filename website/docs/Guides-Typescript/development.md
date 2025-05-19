@@ -49,7 +49,7 @@ Run the following command to run the tests:
 
 ```shell
 # Run the tests
-npm run test
+npm test
 ```
 
 ### Code style

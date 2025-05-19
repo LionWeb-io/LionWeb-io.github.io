@@ -38,7 +38,7 @@ var language = new DynamicLanguage("lang", LionWebVersions.v2024_1)
 {
     Key = "key-lang", 
     Version = "0",
-    Name = "Complaints Language",
+    Name = "ComplaintsLanguage",
 };
 ```
 
@@ -51,7 +51,7 @@ var complaintsBook = new DynamicConcept("complaints-book", LionWebVersions.v2024
 {
     Partition = true,
     Key = "complaints-book",
-    Name = "Complaints Book",
+    Name = "ComplaintsBook",
 };
 ```
 
@@ -172,13 +172,13 @@ var language = new DynamicLanguage("lang", LionWebVersions.v2024_1)
 {
     Key = "key-lang", 
     Version = "0",
-    Name = "Complaints Language",
+    Name = "ComplaintsLanguage",
 };
 var complaintsBook = new DynamicConcept("complaints-book", LionWebVersions.v2024_1, language)
 {
     Partition = true,
     Key = "complaints-book",
-    Name = "Complaints Book",
+    Name = "ComplaintsBook",
 };
 var complaint = new DynamicConcept("complaint", LionWebVersions.v2024_1, language)
 {
