@@ -11,7 +11,7 @@ The LionWeb team sees the participation of twelve developers, all with a long hi
 * Norman Koester, [itemis](http://itemis.de), Germany
 * [Sergej Koscejev](https://specificlanguages.com), Freelancer, Czech Republic
 * Sascha Lisson, [itemis](http://itemis.de), Germany
-* Pedro Molina, [Metadev](https://metadev.pro/), Spain
+* Pedro J. Molina, [Metadev](https://metadev.pro/), Spain
 * Eugen Schindler [Canon Production Printing](https://cpp.canon/), The Netherlands
 * Alex Shatalin, [Jetbrains (MPS Team)](https://www.jetbrains.com), Czech Republic
 * Niko Stotz, [F1RE](https://www.f1re.io), The Netherlands
