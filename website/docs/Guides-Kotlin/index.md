@@ -1,6 +1,6 @@
 ---
 id: index
-title: Getting Sterted
+title: Getting Started
 sidebar_position: 1
 ---
 
