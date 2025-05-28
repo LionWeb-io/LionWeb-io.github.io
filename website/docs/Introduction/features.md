@@ -1,13 +1,13 @@
 # LionWeb Implementations
 
-| **Feature**                                         | **C#** | **Java** | **Kotlin** | **TypeScript** | **Python** |
-|-----------------------------------------------------|:------:|:--------:|:----------:|:--------------:|:----------:|
-| M1 (model) de/serializer from/to JSON               |    ✅   |     ✅    |      ✅     |        ✅       |      ✅     |
-| M2 (language) de/serializer from/to LW JSON         |    ✅   |     ✅    |      ✅     |        ✅       |      ✅     |
-| Language agnostic (Reflective) API to CRUD LW nodes |    ✅   |     ✅    |      ✅     |        ✅       |      ✅     |
-| Language specific API to CRUD LW nodes              |    ✅   |     ✅    |      ✅     |        ✅       |      ✅     |
-| Bulk protocol Client                                |    ❓   |     ✅    |      ✅     |        ✅       |      ✅     |
-| Delta protocol Client                               |    ➖   |     🏗️    |      ➖     |        ➖       |      ➖     |
+| **Feature**                                         | **LW C#** | **LW Java** | **LW Kotlin** | **LW TypeScript** | **LW Python** |
+|-----------------------------------------------------|:---------:|:-----------:|:-------------:|:-----------------:|:-------------:|
+| M1 (model) de/serializer from/to LW JSON            |     ✅     |      ✅      |       ✅       |         ✅         |       ✅       |
+| M2 (language) de/serializer from/to LW JSON         |     ✅     |      ✅      |       ✅       |         ✅         |       ✅       |
+| Language agnostic (Reflective) API to CRUD LW nodes |     ✅     |      ✅      |       ✅       |         ✅         |       ✅       |
+| Language specific API to CRUD LW nodes              |     ✅     |      ✅      |       ✅       |         ✅         |       ✅       |
+| Bulk protocol Client                                |     ❓     |      ✅      |       ✅       |         ✅         |       ✅       |
+| Delta protocol Client                               |     ➖     |      🏗️      |       ➖       |         ➖         |       ➖       |
 
 
 # LionWeb Integrations
