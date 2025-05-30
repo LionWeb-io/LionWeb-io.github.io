@@ -1,3 +1,8 @@
+---
+title: Features
+sidebar_position: 32
+---
+
 # LionWeb Implementations
 
 | **Feature**                                         | **LW C#** | **LW Java** | **LW Kotlin** | **LW TypeScript** | **LW Python** |
