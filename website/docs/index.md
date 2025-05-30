@@ -39,17 +39,17 @@ Clients can communicate with the repository in two ways: bulk and delta. **Bulk*
 
 ## Working documents
 
-- [Roadmap](roadmap/roadmap.adoc)
-- [Reference Architecture](reference-architecture/reference-architecture.adoc)
-- [Use Cases](documentation/use-cases.adoc)
-- [Meta-Metamodel (M3)](metametamodel/metametamodel.adoc)
-- [Serialization Format](serialization/serialization.adoc)
-- [Bulk Repository Access API](bulk/repo-access-api.adoc)
+- [Roadmap](https://lionweb.io/specification/roadmap/roadmap.html)
+- [Reference Architecture](http://lionweb.io/specification/reference-architecture/reference-architecture.html)
+- [Use Cases](https://lionweb.io/specification/documentation/use-cases.html)
+- [Meta-Metamodel (M3)](https://lionweb.io/specification/metametamodel/metametamodel.html)
+- [Serialization Format](https://lionweb.io/specification/serialization/serialization.html)
+- [Bulk Repository Access API](https://lionweb.io/specification/bulk/repo-access-api.html)
 
 ## Versions of the LionWeb Specifications
 
-- [2023.1](2023.1/index.adoc)
-- [2024.1](2024.1/index.adoc)
+- [2023.1](https://lionweb.io/specification/2023.1/index.html)
+- [2024.1](https://lionweb.io/specification/2024.1/index.html)
 
 ## Legal
 
