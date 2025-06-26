@@ -5,7 +5,7 @@ sidebar_position: 10
 
 ### Bulk APIs
 
-The Bulk API is the primary mechanism for interacting with the LionWeb repository. All endpoints use `POST` requests and accept/return JSON payloads. Below are the currently supported endpoints, including request details, validation, and response semantics.
+The Bulk API is the primary mechanism for interacting with the LionWeb server. All endpoints use `POST` requests and accept/return JSON payloads. Below are the currently supported endpoints, including request details, validation, and response semantics.
 
 ### `POST /bulk/create`
 

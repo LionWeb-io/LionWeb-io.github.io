@@ -18,7 +18,7 @@ When working with LionWeb nodes in Typescript, there are **two complementary app
 At the heart of LionWeb is the `Node` interface. Implementing it guarantees:
 
 - Serialization and deserialization
-- Compatibility with the LionWeb Repository
+- Compatibility with the LionWeb Server
 - Introspection through classifiers and features
 - Tool support (e.g., editors, model processors)
 

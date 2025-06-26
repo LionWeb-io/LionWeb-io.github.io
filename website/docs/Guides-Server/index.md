@@ -4,15 +4,15 @@ title: Welcome
 sidebar_position: 1
 ---
 
-# LionWeb Repository
+# LionWeb Server
 
-The **LionWeb Repository** is the reference implementation of a storage server for LionWeb-compliant models. It is built in **TypeScript**, runs on **Node.js**, and stores data in a **PostgreSQL** database. It supports the [LionWeb specification](https://lionweb.io) and provides robust APIs for bulk operations, inspection, language registration, and administrative setup.
+The **LionWeb Server** is the reference implementation of a storage server for LionWeb-compliant models. It is built in **TypeScript**, runs on **Node.js**, and stores data in a **PostgreSQL** database. It supports the [LionWeb specification](https://lionweb.io) and provides robust APIs for bulk operations, inspection, language registration, and administrative setup.
 
 ---
 
 ## Overview
 
-- Language-agnostic LionWeb model repository (i.e., it works with all LionWeb languages)
+- Language-agnostic LionWeb model server (i.e., it works with all LionWeb languages)
 - Built with Node.js and TypeScript
 - Persists models using PostgreSQL (via Docker or local installation)
 - Interacts via a set of REST-based including **Bulk APIs**, **DB Admin APIs**, **Additional APIs**, and **Inspection APIs**
@@ -26,7 +26,7 @@ The repository server can run in two distinct modes:
 
 ## PostgreSQL Configuration
 
-The repository uses PostgreSQL (tested with version `16.1`). You can quickly start a PostgreSQL instance via Docker:
+The server uses PostgreSQL (tested with version `16.1`). You can quickly start a PostgreSQL instance via Docker:
 
 ```bash
 docker pull postgres:16.1
@@ -54,10 +54,10 @@ You can use a prebuilt Docker image of the repository:
 
 ```bash
 # Latest version
-docker pull ghcr.io/lionweb-io/lionweb-repository:latest
+docker pull ghcr.io/lionweb-io/lionweb-server:latest
 
 # Specific release version
-docker pull ghcr.io/lionweb-io/lionweb-repository:release-lionweb-repository-0.1.1
+docker pull ghcr.io/lionweb-io/lionweb-server:release-lionweb-server-0.1.1
 ```
 
 ### Run tests:
@@ -68,13 +68,13 @@ npm run test
 
 ## Authentication
 
-The repository can be secured by specifying a **token** in the configuration. When enabled, all incoming HTTP requests must include this token in the `Authorization` header.
+The server can be secured by specifying a **token** in the configuration. When enabled, all incoming HTTP requests must include this token in the `Authorization` header.
 
-For more reliable security we suggest using a reverse OAuth proxy in front of the LionWeb Repository (e.g., Supertokens, Authentik, Keycloak)
+For more reliable security we suggest using a reverse OAuth proxy in front of the LionWeb Server (e.g., Supertokens, Authentik, Keycloak)
 
 ## Client Library
 
-A **JavaScript/TypeScript client** for the LionWeb Repository exists within the same project but is **not yet published**. To use it:
+A **JavaScript/TypeScript client** for the LionWeb Server exists within the same project but is **not yet published**. To use it:
 
 1. Clone the repository
 2. Build the project locally

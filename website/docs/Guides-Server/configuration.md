@@ -88,8 +88,8 @@ Below is the server-config.json with all default values
 
 ## Server configuration
 
-* **server.serverPort** (default `3005`): Port at which the lionweb repository can be reached
-* **server.bodyLimit** (default `50mb`): Maximum size of the body requests accepted by the lionweb repository
+* **server.serverPort** (default `3005`): Port at which the lionweb server can be reached
+* **server.bodyLimit** (default `50mb`): Maximum size of the body requests accepted by the lionweb server
 * **server.expectedToken** (default to _no token_): When a token is specified, it should be provided in all calls. 
   Otherwise, they would be rejected.
 

@@ -17,14 +17,14 @@ sidebar_position: 32
 
 # LionWeb Integrations
 
-| **Feature**                  | **MPS** | **EMF** |   **Freon**   | **Rascal** | **Modelix** | **LW Repository** |
-|------------------------------|:-------:|:-------:|:-------------:|:----------:|:-----------:|:-----------------:|
-| Depends on LW implementation | LW Java | LW Java | LW TypeScript |   LW Java  |      ❓      |   LW TypeScript   |
-| Export to LW M1 (model)      |    ✅    |    ✅    |       ✅       |      ✅     |      ✅      |         ➖         |
-| Export to LW M2 (language)   |    ✅    |    ✅    |       ✅       |      ❓     |      ❓      |         ➖         |
-| Import from LW M1 (model)    |    ✅    |    ✅    |       ✅       |      ✅     |      ✅      |         ➖         |
-| Import from LW M2 (language) |    ❓    |    ✅    |       ✅       |      ✅     |      ❓      |         ➖         |
-| Bulk protocol Server         |    ❓    |    ➖    |       ➖       |      ➖     |      ✅      |         ✅         |
-| Bulk protocol Client         |    ➖    |    ➖    |       ❓       |      ➖     |      ➖      |         ➖         |
-| Delta protocol Server        |    ➖    |    ➖    |       ➖       |      ➖     |      ➖      |         🏗️         |
-| Delta protocol Client        |    ➖    |    ➖    |       ➖       |      ➖     |      ➖      |         ➖         |
+| **Feature**                  | **MPS** | **EMF** |   **Freon**   | **Rascal** | **Modelix** | **LW Server** |
+|------------------------------|:-------:|:-------:|:-------------:|:----------:|:-----------:|:-------------:|
+| Depends on LW implementation | LW Java | LW Java | LW TypeScript |   LW Java  |      ❓      | LW TypeScript |
+| Export to LW M1 (model)      |    ✅    |    ✅    |       ✅       |      ✅     |      ✅      |       ➖       |
+| Export to LW M2 (language)   |    ✅    |    ✅    |       ✅       |      ❓     |      ❓      |       ➖       |
+| Import from LW M1 (model)    |    ✅    |    ✅    |       ✅       |      ✅     |      ✅      |       ➖       |
+| Import from LW M2 (language) |    ❓    |    ✅    |       ✅       |      ✅     |      ❓      |       ➖       |
+| Bulk protocol Server         |    ❓    |    ➖    |       ➖       |      ➖     |      ✅      |       ✅       |
+| Bulk protocol Client         |    ➖    |    ➖    |       ❓       |      ➖     |      ➖      |       ➖       |
+| Delta protocol Server        |    ➖    |    ➖    |       ➖       |      ➖     |      ➖      |      🏗️      |
+| Delta protocol Client        |    ➖    |    ➖    |       ➖       |      ➖     |      ➖      |       ➖       |

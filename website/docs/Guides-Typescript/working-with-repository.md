@@ -1,27 +1,27 @@
 ---
-title: Working with the LionWeb Repository
+title: Working with the LionWeb Server
 sidebar_position: 44
 ---
 
-# Working with the LionWeb Repository
+# Working with the LionWeb Server
 
-Working with the [LionWeb Repository](https://github.com/LionWeb-io/lionweb-repository) we can store and retrieve nodes. 
+Working with the [LionWeb Server](https://github.com/LionWeb-io/lionweb-server) we can store and retrieve nodes. 
 It is also a mean to exchange models with other LionWeb-compliant components. You can refer to the website of the 
-LionWeb Repository to learn how to start it. 
+LionWeb Server to learn how to start it. 
 
-This page provides an overview of how to interact with the repository using the provided Typescript client and outlines the 
+This page provides an overview of how to interact with the server using the provided Typescript client and outlines the 
 basic concepts involved.
 
 ## Overview
 
-The LionWeb Repository is a generic storage system designed to hold nodes conforming to the LionWeb metamodel.
+The LionWeb Server is a generic storage system designed to hold nodes conforming to the LionWeb metamodel.
 
 It provides two sets of APIs:
 
 * The Bulk APIs: intended to store and retrieve entire partitions or large sub-trees
 * The Delta APIs: currently under development, it will support real-time collaboration
 
-The LionWeb Repository can also optionally support versioning.
+The LionWeb Server can also optionally support versioning.
 
 In this guide we will only focus on the Bulk APIs.
 
@@ -37,7 +37,7 @@ It offers REST APIs for communication, which are wrapped in a convenient Typescr
 
 The following example demonstrates how to use the LionWeb Java client to:
 
-1. Connect to a running LionWeb Repository
+1. Connect to a running LionWeb Server
 2. Define a language and register it
 3. Create a partition node
 4. Add children to that partition
