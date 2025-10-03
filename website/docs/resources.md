@@ -78,6 +78,6 @@ A demo application of LionWeb presented at MPS Meetup 2023 and LangDev 2023. It 
 ## Community
 
 - [LionWeb GitHub Organization](https://github.com/LionWeb-io/)
-- [LionWeb Slack Channel](https://join.slack.com/t/lionweb/shared_invite/zt-1uvaly9eb-z529c694OIN5oBh9FH1vhQ)
+- [LionWeb Slack Channel](https://join.slack.com/t/lionweb/shared_invite/zt-3evixdp92-TwyMrY92qxtM7ii9cOHfjg)
 - Contact: [info@lionweb.io](mailto:info@lionweb.io)
 
