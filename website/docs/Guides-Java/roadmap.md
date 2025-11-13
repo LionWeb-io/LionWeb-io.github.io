@@ -6,8 +6,9 @@ sidebar_position: 3
 
 The project currently support the core specifications.
 
-We will work on implementing support for the delta protocol, as soon as it will be implemented in the LionWeb Repository.
+We released version 1.1 in the course of 2025, and we are steadily progressing on:
+- Implementing support for the Delta protocol
+- Solve any issue reported
+- Constantly optimize performance
 
-We will then proceed to review the project, performing some general maintenance and release version 1.0.
-
-Despite the version number being below 1.0, the project is mature, well tested, and used in production.
+The project is used in production and actively maintained.
