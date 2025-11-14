@@ -36,6 +36,12 @@ Add the following dependency to your `pom.xml`:
 </dependency>
 ```
 
+Or this to your `build.gradle.kts`:
+
+```
+implementation("io.lionweb.lionweb-java:lionweb-java-2024.1-core:${lionwebVersion}")
+```
+
 ## Usage Schema
 
 The typical usage consists in:
