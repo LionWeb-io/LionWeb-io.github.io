@@ -20,12 +20,12 @@ You may want to consider
 
 - [**JetBrains MPS**](https://www.jetbrains.com/mps/): A powerful projectional editor with LionWeb export support provided through [LionWeb MPS](http://github.com/lionweb-io/lionweb-mps).
 - [**Freon**](https://www.freon4dsl.dev/): A lightweight web-based projectional editor, with support for LionWeb provided through [LionWeb-Freon-M3](https://github.com/LionWeb-io/lionweb-freon-m3).
-- [**StarLasu**](https://starlasu.strumenta.com/): A cross-platform framework for language engineering framework developed by [Strumenta](https://strumenta.com).
+- [**Starlasu**](https://starlasu.strumenta.com/): A cross-platform framework for language engineering framework developed by [Strumenta](https://strumenta.com).
 
 These tools allow engineers to create languages using their built-in mechanisms and then **export them to LionWeb-compatible formats**. Once exported, these languages can be:
 
 - Used in other LionWeb-aware tools.
-- Serialized to formats like **JSON**, **FlatBuffer**, or **BroadBuffer**.
+- Serialized to formats like **JSON** or **Protobuf**.
 - Re-imported across the ecosystem.
 
 This workflow maximizes **interoperability and reuse**, allowing language definitions to move seamlessly across platforms.
@@ -46,8 +46,9 @@ Using the API in the `core` module, you can define metamodels directly in Python
 ### Supported Serialization Formats
 
 The LionWeb Python implementation supports serialization in **JSON** (standard and human-readable).
-As of now, it does not support **ProtoBuf** and **FlatBuffers** (compact binary format). If you want support
-for them to be added please feel free to reach out and let us know.
+It also support **ProtoBuf**.
+
+A series of models can also be store in a single [LionWeb Archive](/Guides-Python/lionweb-archive)
 
 ---
 
