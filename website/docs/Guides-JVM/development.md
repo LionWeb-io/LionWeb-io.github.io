@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# Contributing to LionWeb Java
+# Contributing to LionWeb JVM
 
-Thank you for your interest in contributing to LionWeb Java! This document provides guidelines and instructions for contributing to the project.
+Thank you for your interest in contributing to LionWeb JVM! This document provides guidelines and instructions for contributing to the project.
 
 
 ## Getting Started

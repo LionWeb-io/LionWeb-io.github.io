@@ -4,9 +4,9 @@ title: Getting Started
 sidebar_position: 1
 ---
 
-## Getting Started with LionWeb Kotlin
+## Getting Started with LionWeb JVM and Kotlin
 
-The LionWeb Kotlin modules complement the LionWeb Java ones, adding adapters to make the life of Kotlin developers more convenient.
+The Kotlin modules of LionWeb JVM complement the LionWeb Java ones, adding adapters to make the life of Kotlin developers more convenient.
 
 This guide will help you get started with LionWeb Kotlin, from installation to creating your first project.
 
@@ -24,8 +24,8 @@ Add the following to your `build.gradle` or `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("io.lionweb.lionweb-kotlin:lionweb-kotlin-2024.1-core:0.4.2")
-    implementation("io.lionweb.lionweb-kotlin:lionweb-kotlin-2024.1-repo-client:0.4.2")
+    implementation("io.lionweb:lionweb-kotlin-2024.1-kotlin-core:${latest_version}")
+    implementation("io.lionweb:lionweb-kotlin-2024.1-kotlin-client:${latest_version}")
 }
 ```
 
@@ -35,14 +35,14 @@ Add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>io.lionweb.lionweb-kotlin</groupId>
-    <artifactId>lionweb-kotlin-2024.1-core</artifactId>
-    <version>${lionwebVersion}</version>
+    <groupId>io.lionweb</groupId>
+    <artifactId>lionweb-2024.1-kotlin-core</artifactId>
+    <version>${latest_version}</version>
 </dependency>
 <dependency>
-    <groupId>io.lionweb.lionweb-kotlin</groupId>
-    <artifactId>lionweb-kotlin-2024.1-repo-client</artifactId>
-    <version>${lionwebVersion}</version>
+    <groupId>io.lionweb</groupId>
+    <artifactId>lionweb-2024.1-kotlin-client</artifactId>
+    <version>${latest_version}</version>
 </dependency>
 ```
 
