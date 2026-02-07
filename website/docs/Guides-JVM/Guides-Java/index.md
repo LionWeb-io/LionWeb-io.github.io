@@ -4,11 +4,11 @@ title: Welcome
 sidebar_position: 1
 ---
 
-# Welcome to LionWeb Java
+# Welcome to LionWeb JVM for Java
 
-LionWeb Java is a Java implementation of the LionWeb specification, providing libraries for working with languages and models in the LionWeb ecosystem.
+LionWeb JVM has modules dedicated specifically to provide a Java implementation of the LionWeb specification, offering libraries for working with languages and models in the LionWeb ecosystem.
 
-If you are using Kotlin, you may want to look at [LionWeb Kotlin](https://github.com/LionWeb-io/lionweb-kotlin), which builds upon this library.
+If you are using Kotlin, you may want to look at [Kotlin based modules](/Guides-JVM/Guides-Kotlin) of the same library.
 
 ## What is LionWeb?
 
@@ -28,7 +28,7 @@ LionWeb is a specification for model-based software engineering that provides:
 
 ## Getting Started
 
-To get started with LionWeb Java, check out our [Getting Started Guide](/Guides-Java/getting-started).
+To get started with LionWeb Java, check out our [Getting Started Guide](/Guides-JVM/Guides-Java/getting-started).
 
 ## Documentation Structure
 
@@ -38,4 +38,4 @@ To get started with LionWeb Java, check out our [Getting Started Guide](/Guides-
 
 ## Contributing
 
-We welcome contributions! See our [Contribution Guide](/Guides-Java/development) for details on how to get involved. 
+We welcome contributions! See our [Contribution Guide](/Guides-JVM/Guides-Java/development) for details on how to get involved. 

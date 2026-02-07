@@ -2,9 +2,9 @@
 sidebar_position: 40
 ---
 
-# Getting Started with LionWeb Java
+# Getting Started
 
-This guide will help you get started with LionWeb Java, from installation to creating your first project.
+This guide will help you get started with LionWeb JVM with Java, from installation to creating your first project.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ Add the following to your `build.gradle` or `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("io.lionweb.lionweb-java:lionweb-java-2024.1-core:$lionwebVersion")
+    implementation("io.lionweb:lionweb-2024.1-core:$lionwebVersion")
 }
 ```
 
@@ -30,8 +30,8 @@ Add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>io.lionweb.lionweb-java</groupId>
-    <artifactId>lionweb-java-2024.1-core</artifactId>
+    <groupId>io.lionweb</groupId>
+    <artifactId>lionweb-2024.1-core</artifactId>
     <version>${lionwebVersion}</version>
 </dependency>
 ```
@@ -39,7 +39,7 @@ Add the following dependency to your `pom.xml`:
 Or this to your `build.gradle.kts`:
 
 ```
-implementation("io.lionweb.lionweb-java:lionweb-java-2024.1-core:${lionwebVersion}")
+implementation("io.lionweb:lionweb-2024.1-core:${lionwebVersion}")
 ```
 
 ## Usage Schema

@@ -2,7 +2,7 @@
 sidebar_position: 43
 ---
 
-# Serialization in LionWeb Java
+# Serialization
 
 The LionWeb Java library provides robust support for **serializing** and **deserializing** models composed of nodes. These nodes can represent instances of a language as well as the language definitions themselves.
 

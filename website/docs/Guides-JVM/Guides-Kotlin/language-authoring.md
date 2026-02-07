@@ -3,7 +3,7 @@ title: Authoring Languages
 sidebar_position: 10
 ---
 
-# Authoring Languages in LionWeb Kotlin
+# Authoring Languages
 
 LionWeb is an open initiative to enable **interoperability among language engineering tools**.
 

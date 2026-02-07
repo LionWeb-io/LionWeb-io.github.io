@@ -5,7 +5,7 @@ sidebar_position: 45
 
 # Validation
 
-The lionweb-java project includes a comprehensive validation framework located in the `io.lionweb.utils` package. Here's an overview of all validation-related features:
+The LionWeb-JVM project includes a comprehensive validation framework located in the `io.lionweb.utils` package. Here's an overview of all validation-related features:
 
 ## Introduction
 
