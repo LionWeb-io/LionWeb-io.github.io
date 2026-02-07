@@ -8,7 +8,7 @@ sidebar_position: 1
 
 LionWeb Python is a Python implementation of the LionWeb specification, providing libraries for working with languages and models in the LionWeb ecosystem.
 
-If you are instead using Java, Kotlin, Javascript, Typescript, or C# please look for the corresponding bindings.
+If you are instead using [Java](/Guides-Java/), [Kotlin](/Guides-Kotlin), [Javascript, Typescript](/Guides-Typescript), or [C#](/Guides/Csharp) please look for the corresponding bindings.
 
 ## What is LionWeb?
 
@@ -21,10 +21,11 @@ LionWeb is a specification for model-based software engineering that provides:
 ## Features
 
 - Support for the definition nodes and languages
-- Serialization and deserialization in JSON, Protobuf, and Flatbuffers
-- Client-side implementation of the LionWeb bulk protocol, with support for delta coming soon
+- Serialization and deserialization in JSON and Protobuf
+- Client-side implementation of the LionWeb bulk protocol and delta protocol
 - Bidirectional conversion between LionWeb and EMF
 - Support for both 2023.1 and 2024.1 specifications
+- LionWeb Archive format to store related models efficiently
 
 ## Getting Started
 

@@ -8,6 +8,11 @@ The project currently support the core specifications.
 
 It may be requiring some refining, and completing the repo client to support more rarely used APIs.
 
-After that, we will work on implementing support for the delta protocol, as soon as it will be implemented in the LionWeb Repository.
+LionWeb Python supports serialization to protobuffer and the LionWeb Archive.
 
-We will then proceed to review the project, performing some general maintenance and release version 1.0.
+It also supports the generation of classes from a LionWeb language.
+
+The delta protocol is not yet supported.
+
+Once that is done, We will then proceed to review the project, performing some general maintenance and release version 1.0.
+

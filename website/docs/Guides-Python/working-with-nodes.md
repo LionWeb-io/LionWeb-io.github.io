@@ -140,7 +140,9 @@ You define a Python class for each concept, typically:
 
 Of course, you can do that in the good old way: writing the code yourself.
 
-Or you can define a code generator which, given a language, produce the corresponding classes. This may also be a feature we eventually implement in LionWeb Python.
+Or you can use the built-in generator which, given a language, produce the corresponding classes. See more under [Generating Code](/Guides-Python/generating-code).
+
+In the rest of this section we will show how to define the classes manually.
 
 ### When to Use
 

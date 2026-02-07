@@ -21,6 +21,7 @@ pip install lionweb
 
 The typical usage consists in:
 * Authoring a new Language or retrieving it
+* Generating code from the language
 * Build models (i.e., trees of LionWeb Nodes) according to the Language(s) defined or used
 * Serialize/De-serialize models for storage and for interoperability with other tools
 * Relay on a LionWeb-compliant repository for storing models and for real-time collaboration with other clients
