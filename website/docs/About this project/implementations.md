@@ -25,3 +25,4 @@ title: Existing implementations
 | [Space demo](https://github.com/LionWeb-io/space-demo)                            | C#, MPS, TypeScript            | demo        |              | Demo of LionWeb delta protocol with C# repository and clients in TypeScript and [Daga](https://daga.metadev.pro/) diagram editor.                               |
 | [SysML2 demo](https://github.com/LionWeb-io/sysmlv2-demo)                         | C#, Java, Python, TypeScript   | demo        |              | Demo of a complex language like [SysML2](https://github.com/Systems-Modeling/SysML-v2-Release) migrated from EMF to LionWeb and generated in several languages. |
 
+Missing an implementation? Please [let us know](../resources.md#community)!
