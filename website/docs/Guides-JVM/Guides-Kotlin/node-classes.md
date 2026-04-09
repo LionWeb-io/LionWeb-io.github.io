@@ -109,17 +109,17 @@ Here's a full example that:
  * Automatically reuses the Kotlin node classes
 
 ```kotlin
-import io.lionweb.lioncore.java.language.Concept
-import io.lionweb.lioncore.java.language.LionCoreBuiltins
-import io.lionweb.lioncore.java.model.impl.DynamicNode
-import io.lionweb.lioncore.java.serialization.SerializationProvider
-import io.lionweb.lioncore.kotlin.MetamodelRegistry
-import io.lionweb.lioncore.kotlin.MetamodelRegistry.registerMapping
-import io.lionweb.lioncore.kotlin.Multiplicity
-import io.lionweb.lioncore.kotlin.createConcept
-import io.lionweb.lioncore.kotlin.createContainment
-import io.lionweb.lioncore.kotlin.createProperty
-import io.lionweb.lioncore.kotlin.lwLanguage
+import io.lionweb.language.Concept
+import io.lionweb.language.LionCoreBuiltins
+import io.lionweb.model.impl.DynamicNode
+import io.lionweb.serialization.SerializationProvider
+import io.lionweb.kotlin.MetamodelRegistry
+import io.lionweb.kotlin.MetamodelRegistry.registerMapping
+import io.lionweb.kotlin.Multiplicity
+import io.lionweb.kotlin.createConcept
+import io.lionweb.kotlin.createContainment
+import io.lionweb.kotlin.createProperty
+import io.lionweb.kotlin.lwLanguage
 import kotlin.test.assertTrue
 
 fun main(args: Array<String>) {
@@ -213,10 +213,10 @@ This is ideal for quick prototyping and avoids duplication.
 Here there is the complete example:
 
 ```kotlin
-import io.lionweb.lioncore.java.model.impl.DynamicNode
-import io.lionweb.lioncore.java.serialization.SerializationProvider
-import io.lionweb.lioncore.kotlin.MetamodelRegistry
-import io.lionweb.lioncore.kotlin.lwLanguage
+import io.lionweb.model.impl.DynamicNode
+import io.lionweb.serialization.SerializationProvider
+import io.lionweb.kotlin.MetamodelRegistry
+import io.lionweb.kotlin.lwLanguage
 import kotlin.test.assertTrue
 
 fun main(args: Array<String>) {
