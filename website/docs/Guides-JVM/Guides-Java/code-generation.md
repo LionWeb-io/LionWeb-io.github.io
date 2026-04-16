@@ -118,3 +118,141 @@ sourceSets.named("main") {
 * **Protobuf Support**: While the plugin may detect `.pb` files, processing them is currently unsupported and will raise an exception.
 * **Structured Data Types**: Generation of code for Structured Data Types is not yet implemented.
 * **Extended Concepts**: Generating node classes that extend other concepts is currently limited or under development in specific generators.
+
+---
+
+## End-to-End Walkthrough
+
+This section shows the full workflow: providing a language definition, what the plugin
+generates, and how to use the generated code.
+
+### 1. Provide a Language Definition
+
+Place your language JSON files in `src/main/lionweb/` (or the directory configured in
+`languagesDirectory`). These are standard LionWeb serialization chunks containing a `Language`
+node and its child `Concept`, `Property`, and `Containment` nodes.
+
+The simplest way to produce this file is to author the language programmatically and then
+serialize it with `JsonSerialization.saveLanguageToFile(language, file)`. A file for a simple
+Task/TaskList language looks like:
+
+```json
+{
+  "serializationFormatVersion": "2024.1",
+  "languages": [
+    { "key": "LionCore-M3",       "version": "2024.1" },
+    { "key": "LionCore-builtins", "version": "2024.1" }
+  ],
+  "nodes": [
+    {
+      "id": "task-list-language",
+      "classifier": { "language": "LionCore-M3", "version": "2024.1", "key": "Language" },
+      "properties": [
+        { "property": { "language": "LionCore-builtins", "version": "2024.1", "key": "LionCore-builtins-INamed-name" }, "value": "TaskList" },
+        { "property": { "language": "LionCore-M3",       "version": "2024.1", "key": "Language-version"             }, "value": "1" },
+        { "property": { "language": "LionCore-M3",       "version": "2024.1", "key": "IKeyed-key"                   }, "value": "TaskList" }
+      ],
+      "containments": [
+        { "containment": { "language": "LionCore-M3", "version": "2024.1", "key": "Language-entities" },
+          "children": ["task-list-concept", "task-concept"] }
+      ],
+      "references": [], "annotations": [], "parent": null
+    }
+    // ... TaskList concept, Task concept, their features ...
+  ]
+}
+```
+
+### 2. What Gets Generated
+
+Running `./gradlew generateLWLanguages generateLWNodeClasses` produces two kinds of files
+under `build/generated-lionweb/`:
+
+**Language singleton** — one per language (`TaskListLanguage.java`):
+
+```java
+package com.example;
+
+import io.lionweb.language.Concept;
+import io.lionweb.language.Containment;
+import io.lionweb.language.Language;
+import io.lionweb.language.Property;
+
+public class TaskListLanguage extends Language {
+
+    public static final TaskListLanguage INSTANCE = new TaskListLanguage();
+
+    public static final Concept TASK_LIST = INSTANCE.getConceptByName("TaskList");
+    public static final Concept TASK      = INSTANCE.getConceptByName("Task");
+
+    public static final Property    TASK_NAME  = (Property)    TASK.getFeatureByName("name");
+    public static final Containment TASK_TASKS = (Containment) TASK_LIST.getFeatureByName("tasks");
+
+    private TaskListLanguage() {
+        // Reconstructed from the JSON definition
+    }
+}
+```
+
+**Typed node class** — one per `Concept` or `Interface` (`Task.java`):
+
+```java
+package com.example;
+
+import io.lionweb.model.ClassifierInstanceUtils;
+import io.lionweb.model.impl.DynamicNode;
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
+public class Task extends DynamicNode {
+
+    public Task(@Nonnull String id) {
+        super(id, TaskListLanguage.TASK);
+    }
+
+    @Nullable
+    public String getName() {
+        return (String) ClassifierInstanceUtils.getPropertyValueByName(this, "name");
+    }
+
+    public void setName(@Nullable String value) {
+        ClassifierInstanceUtils.setPropertyValueByName(this, "name", value);
+    }
+}
+```
+
+### 3. Using the Generated Classes
+
+Once generated, you can use the typed classes directly instead of the generic `DynamicNode`
+API:
+
+```java
+import com.example.Task;
+import com.example.TaskListLanguage;
+import io.lionweb.serialization.JsonSerialization;
+import io.lionweb.serialization.SerializationProvider;
+
+// Create nodes using the typed API
+Task task1 = new Task("task-1");
+task1.setName("Buy milk");
+
+Task task2 = new Task("task-2");
+task2.setName("Write report");
+
+// Serialize — register the generated language first
+JsonSerialization serialization = SerializationProvider.getStandardJsonSerialization();
+serialization.registerLanguage(TaskListLanguage.INSTANCE);
+String json = serialization.serializeTreesToJsonString(task1);
+
+// Deserialize — register a custom instantiator for the Task concept
+serialization.getInstantiator().registerCustomDeserializer(
+    TaskListLanguage.TASK.getID(),
+    (classifier, serializedInstance, nodesByID, propertyValues) ->
+        new Task(serializedInstance.getID()));
+
+Task deserialized = (Task) serialization.deserializeToNodes(json).get(0);
+System.out.println(deserialized.getName()); // "Buy milk"
+```
+
+This is equivalent to the heterogeneous API shown in [Working with Nodes](./working-with-nodes),
+but the accessor methods are generated for you automatically instead of being written by hand.

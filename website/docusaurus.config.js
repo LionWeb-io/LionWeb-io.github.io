@@ -57,12 +57,6 @@ const config = {
       },
       items: [
         {
-          label: 'Java references',
-          href: 'https://lionweb.io/lionweb-java/api/index.html',
-          position: 'left',
-          target: '_blank',
-        },
-        {
           href: 'https://github.com/lionweb-io',
           label: 'LionWeb on GitHub',
           position: 'right',
