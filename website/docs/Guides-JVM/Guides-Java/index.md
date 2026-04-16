@@ -34,7 +34,6 @@ To get started with LionWeb Java, check out our [Getting Started Guide](/Guides-
 
 - **Guides**: Step-by-step instructions for common tasks
 - **Architecture**: Detailed information about the project's architecture
-- **[API Reference](https://lionweb.io/lionweb-java/api/)**: Javadoc for all public APIs
 
 ## Contributing
 
