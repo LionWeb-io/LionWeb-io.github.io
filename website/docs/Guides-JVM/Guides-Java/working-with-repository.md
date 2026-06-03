@@ -27,11 +27,13 @@ dependencies {
 
 ## Overview
 
-The LionWeb Repository provides two sets of APIs:
+The LionWeb Server is a generic storage system designed to hold nodes conforming to the
+LionWeb metamodel.
 
-* **Bulk APIs**: store and retrieve entire partitions or large sub-trees via HTTP REST.
-* **Delta APIs**: real-time collaboration via WebSocket. See the
-  [Delta Protocol Guide](./delta-protocol) for details.
+It provides two sets of APIs:
+
+* **Bulk APIs**: store and retrieve entire partitions or large sub-trees.
+* **Delta APIs**: currently under development; will support real-time collaboration.
 
 The LionWeb Repository can also optionally support versioning.
 
