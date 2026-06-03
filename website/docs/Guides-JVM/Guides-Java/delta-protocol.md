@@ -25,8 +25,7 @@ convenient choice for simple use cases, local development, and testing.
 For production scenarios that require persistence across restarts, the
 [LionWeb Server](https://github.com/LionWeb-io/lionweb-server) is backed by a database and
 provides a more robust foundation. Delta protocol support in the LionWeb Server is planned for a
-future release; for now the LionWeb JVM Server is the recommended target when using the
-`DeltaClient`.
+future release.
 
 ## Gradle Dependency
 
