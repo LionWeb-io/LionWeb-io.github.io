@@ -22,7 +22,9 @@ LionWeb is a specification for model-based software engineering that provides:
 
 - Support for the definition nodes and languages
 - Serialization and deserialization in JSON and Protobuf
-- Client-side implementation of the LionWeb bulk protocol, with support for delta under development
+- Client-side implementation of the LionWeb bulk protocol (`LionWebBulkClient`)
+- Client-side implementation of the LionWeb delta protocol (`DeltaClient`) via WebSocket
+- Standalone server module exposing both bulk HTTP and delta WebSocket APIs
 - Bidirectional conversion between LionWeb and EMF
 - Support for both 2023.1 and 2024.1 specifications
 

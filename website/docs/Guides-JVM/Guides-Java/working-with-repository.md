@@ -1,5 +1,5 @@
 ---
-title: Working with the LionWeb Repository
+title: Working with the LionWeb Server
 sidebar_position: 44
 ---
 
@@ -27,7 +27,7 @@ dependencies {
 
 ## Overview
 
-The LionWeb Repository is a generic storage system designed to hold nodes conforming to the
+The LionWeb Server is a generic storage system designed to hold nodes conforming to the
 LionWeb metamodel.
 
 It provides two sets of APIs:
@@ -41,12 +41,16 @@ This guide focuses on the Bulk APIs.
 
 ## Working with the Bulk APIs
 
-The `LionWebClient` class (in `io.lionweb.client`) wraps the repository's REST API and supports:
+The `LionWebBulkClient` class (in `io.lionweb.client`) wraps the repository's REST API and
+supports:
 
 - Creating and managing **partitions** (top-level model containers)
 - Storing and retrieving **nodes**
 - Multiple **LionWeb versions** (2023.1 and 2024.1)
 - Hooks for **functional testing**
+
+> **Note:** `LionWebBulkClient` was introduced in 1.4.2, replacing the now-deprecated
+> `LionWebClient`. If you are upgrading, see the [Migration Guide](./migration-1.4).
 
 ## Example Usage
 
@@ -60,13 +64,17 @@ The following example demonstrates how to:
 
 ```java
 import io.lionweb.LionWebVersion;
-import io.lionweb.client.LionWebClient;
+import io.lionweb.client.LionWebBulkClient;
 import io.lionweb.model.impl.DynamicNode;
 import io.lionweb.model.ClassifierInstanceUtils;
 import io.lionweb.model.Node;
 
-LionWebClient client =
-    new LionWebClient(LionWebVersion.v2024_1, "localhost", 3005, "myRepo");
+LionWebBulkClient client = new LionWebBulkClient.Builder()
+    .withVersion(LionWebVersion.v2024_1)
+    .withHostname("localhost")
+    .withPort(3005)
+    .withRepository("myRepo")
+    .build();
 client.getJsonSerialization().registerLanguage(PropertiesLanguage.propertiesLanguage);
 
 DynamicNode p1 = new DynamicNode("p1", PropertiesLanguage.propertiesPartition);
@@ -102,15 +110,15 @@ client.store(Collections.singletonList(partition));
 
 ## Error Handling
 
-`LionWebClient` throws `RequestFailureException` (in `io.lionweb.client`) when the server
-returns an error response. Wrap calls in a try/catch to handle network or server errors:
+`LionWebBulkClient` throws `BulkRequestFailureException` (in `io.lionweb.client`) when the
+server returns an error response. Wrap calls in a try/catch to handle network or server errors:
 
 ```java
-import io.lionweb.client.RequestFailureException;
+import io.lionweb.client.BulkRequestFailureException;
 
 try {
     client.store(nodes);
-} catch (RequestFailureException e) {
+} catch (BulkRequestFailureException e) {
     System.err.println("Repository call failed: " + e.getMessage());
     // e.getResponseCode() returns the HTTP status code
 }
@@ -124,11 +132,11 @@ protocol that does **not** require Docker or a running server:
 
 ```java
 import io.lionweb.LionWebVersion;
-import io.lionweb.client.LionWebClient;
+import io.lionweb.client.LionWebBulkClient;
 import io.lionweb.client.inmemory.InMemoryServer;
 
 InMemoryServer server = new InMemoryServer(LionWebVersion.v2024_1);
-LionWebClient client = server.connectClient();
+LionWebBulkClient client = server.connectClient();
 client.getJsonSerialization().registerLanguage(myLanguage);
 
 // Create, store, and retrieve nodes exactly as you would with a real server

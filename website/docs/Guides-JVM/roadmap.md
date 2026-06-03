@@ -4,16 +4,16 @@ sidebar_position: 3
 
 # Status and Roadmap
 
-The project currently support the core specifications.
+The project currently supports the core specifications and has reached production maturity.
 
-We released version 1.3 in early 2026.
-We have recently merged *LionWeb-Java* and *LionWeb-Kotlin* in **LionWeb-JVM**.
+We have merged *LionWeb-Java* and *LionWeb-Kotlin* into **LionWeb-JVM**.
 
-The library is mature with great support for serialization, language definition, nodes manipulation, code generation, and the LionWeb Archive format.
+The library has great support for serialization, language definition, nodes manipulation, code generation, the LionWeb Archive format, and the Delta protocol.
 
-We are progressing on:
-- Completing support for the Delta protocol
+## Ongoing Work
+
 - Solve any issue reported
 - Constantly optimize performance
+- Expand Delta protocol documentation and tooling
 
 The project is used in production and actively maintained.
