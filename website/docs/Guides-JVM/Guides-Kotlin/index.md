@@ -12,7 +12,9 @@ This guide will help you get started with LionWeb Kotlin, from installation to c
 
 ## Prerequisites
 
-- Java 8 or later
+- Java 11 or later for using the library (versions 11, 17, 21, and 25 are tested and supported). Java 8 support was
+  dropped in version 1.4.0.
+- Java 17 is required for building the library.
 
 ## Installation
 

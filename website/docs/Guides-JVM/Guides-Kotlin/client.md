@@ -9,6 +9,10 @@ The `LionWebClient` Kotlin class provides a convenient high-level interface for 
 
 It is essentially a wrapper around the same class defined in LionWeb Java. However it offers additional methods and an API that is slightly more convenient for Kotlin developers.
 
+> **Note:** Since 1.4.2, the underlying Java class is `LionWebBulkClient` (formerly
+> `LionWebClient`). The Kotlin wrapper API is unchanged, but if you import the Java class
+> directly, update your imports accordingly.
+
 ### Repository Setup
 
 - **Create a repository**:
@@ -79,8 +83,9 @@ It is essentially a wrapper around the same class defined in LionWeb Java. Howev
 
 ### Modifying the Model
 
-These APIs permits to operate individual changes on nodes in the LionWeb Repository.
-Eventually they should be implemented by using the delta protocol. At the moment the delta protocol is not yet supported, so we use the bulk protocol to implement them, and therefore these operations are not that efficient.
+These APIs permit individual changes to nodes in the LionWeb Repository. As of 1.4.1, a proper
+`DeltaClient` is available for fine-grained real-time control. For direct delta usage, see the
+[Delta Protocol Guide](../Guides-Java/delta-protocol).
 
 - **Append a node to a containment**:
   ```kotlin
