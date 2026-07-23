@@ -55,6 +55,9 @@ An interview discussing the design rationale behind LionWeb and its potential to
 ### [LionWeb Initiative - Interview with Federico Tomassetti](https://tomassetti.me/interview-with-federico-tomassetti/)
 An interview exploring the origins of LionWeb and the practical motivations for making modeling tools collaborate through a shared open format.
 
+### [LionWeb's Meta-meta-model in Comparison](https://lionweb.io/specification/articles/m3-comparison.html)
+This article compares meta-meta-models of LionWeb, C#, EMOF, Ecore, Essential, Freon, Java, KerML, MPS, and TypeScript.
+
 ## Examples
 
 ### [Property Demo](https://github.com/LionWeb-io/property-demo)
