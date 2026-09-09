@@ -27,7 +27,7 @@ Comprehensive documentation covering:
 - [Reference Architecture](https://lionweb.io/specification/reference-architecture/reference-architecture.html)
 - [Roadmap](https://lionweb.io/specification/roadmap/roadmap.html)
 - [Use Cases](https://lionweb.io/specification/documentation/use-cases.html)
-- Delta Repository Access API
+- [Delta Repository Access API](https://lionweb.io/specification/delta/delta-api.html) — <em>Note:</em> this is a pre-publication, prior to the official release.
 
 ## Articles and Tutorials
 
