@@ -50,6 +50,7 @@ Clients can communicate with the repository in two ways: bulk and delta. **Bulk*
 
 - [2023.1](https://lionweb.io/specification/2023.1/index.html)
 - [2024.1](https://lionweb.io/specification/2024.1/index.html)
+- [2026.1](https://lionweb.io/specification/2026.1/index.html)
 
 ## Legal
 
