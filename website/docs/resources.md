@@ -70,13 +70,7 @@ A demo application of LionWeb presented at MPS Meetup 2023 and LangDev 2023. It 
 
 ## Talks and Presentations
 
-- **MPS Meetup 2023**: [Slides](https://voelter.de/data/presentations/lionweb2023.pdf), [Video](https://www.youtube.com/watch?v=dzZdjqbRzuU&t=116s&pp=ygUHbGlvbndlYg%3D%3D)
-- **MODELS 2024 Industry Day**: [LionWeb Presentation](https://conf.researchr.org/details/models-2024/models-2024-industry-day/6/LionWeb-Language-Interfaces-on-the-Web)
-- **Implementing LionWeb in Rascal**: [Slides](https://langdevcon.org/assets/2024/slides/LionWeb-Rascal%20LangDev%202024.pdf). [Video](https://www.youtube.com/watch?v=Uq414dBALg4&pp=ygUHbGlvbndlYg%3D%3D)
-- **A Case Study Execution of LionWeb nodes in Truffle Language Framework - Erkan Diken**: [Video](https://www.youtube.com/watch?v=CGPAWbidX8k)
-- **LionWeb and Kolasu: an integration story**: Presentation by Alessio Stalla. [Video](https://www.youtube.com/watch?v=sUfSoEkXTuM&t=1411s&pp=ygUHbGlvbndlYg%3D%3D)
-- **The LionWeb Initiative: interoperability of language tools on the Web**: presentation by Jos Warmer at the Annual Symposium 2023 of MDENet. [Video](https://www.youtube.com/watch?v=m8BWvaq4lW4&pp=ygUHbGlvbndlYtIHCQl-CQGHKiGM7w%3D%3D)
-- **LionWeb: Status Update**: presented at LangDev 2024 by Niko Stotz and Jos Warmer. [Video](https://www.youtube.com/watch?v=2KW-xalM2yE&t=5s&pp=ygUHbGlvbndlYg%3D%3D)
+Directly LionWeb-related talks and presentations we, or other people have given over the years at conferences such as LangDev and MODELS, can be found here: [Conference talks](https://github.com/LionWeb-io/specification/blob/main/conference-talks/conference-talks.adoc).
 
 ## Community
 
