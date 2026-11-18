@@ -45,6 +45,7 @@ Clients can communicate with the repository in two ways: bulk and delta. **Bulk*
 - [Meta-Metamodel (M3)](https://lionweb.io/specification/metametamodel/metametamodel.html)
 - [Serialization Format](https://lionweb.io/specification/serialization/serialization.html)
 - [Bulk Repository Access API](https://lionweb.io/specification/bulk/repo-access-api.html)
+- [Delta Repository Access API](https://lionweb.io/specification/delta/delta-api.html)
 
 ## Versions of the LionWeb Specifications
 
@@ -55,7 +56,4 @@ Clients can communicate with the repository in two ways: bulk and delta. **Bulk*
 ## Legal
 
 All our specifications and code is released as open source under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0). It explicitly allows commercial use. LionWeb is currently not its own legal entity, it's just a voluntary collaboration of people.
-
-
-
 
